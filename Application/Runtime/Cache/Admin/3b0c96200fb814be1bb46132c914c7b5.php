@@ -14,6 +14,10 @@
 
 <!-- page specific plugin styles -->
 
+    <link rel="stylesheet" href="/novel/Public/css/jquery-ui.custom.min.css"/>
+    <link rel="stylesheet" href="/novel/Public/css/chosen.min.css"/>
+
+
 <!-- text fonts -->
 <link rel="stylesheet" href="/novel/Public/css/fonts.googleapis.com.css"/>
 
@@ -23,7 +27,6 @@
 <!--[if lte IE 9]>
 <link rel="stylesheet" href="/novel/Public/css/ace-part2.min.css" class="ace-main-stylesheet"/>
 <![endif]-->
-<link rel="stylesheet" href="/novel/Public/css/ace-skins.min.css"/>
 <link rel="stylesheet" href="/novel/Public/css/ace-rtl.min.css"/>
 
 <!--[if lte IE 9]>
@@ -463,34 +466,59 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="widget-box">
-                            <div class="widget-header">
-                                <h4 class="widget-title" id="Index4"></h4>
-                                <span class="widget-toolbar">
-                                    <a href="#" data-action="settings">
-                                        <i class="ace-icon fa fa-cog"></i>
-                                    </a>
+                        
+    <div class="row">
+        <div class="col-xs-8 col-sm-8">
+            <div class="widget-box">
+                <div class="widget-header">
+                    <h4 class="widget-title">Select Box</h4>
+                    <span class="widget-toolbar">
+                        <a href="#" data-action="reload">
+                            <i class="ace-icon fa fa-refresh"></i>
+                        </a>
+                        <a href="#" data-action="collapse">
+                            <i class="ace-icon fa fa-chevron-up"></i>
+                        </a>
+                    </span>
+                </div>
 
-                                    <a href="#" data-action="reload">
-                                        <i class="ace-icon fa fa-refresh"></i>
-                                    </a>
+                <div class="widget-body">
+                    <div class="widget-main">
 
-                                    <a href="#" data-action="collapse">
-                                        <i class="ace-icon fa fa-chevron-up"></i>
-                                    </a>
-
-                                    <a href="#" data-action="close">
-                                        <i class="ace-icon fa fa-times"></i>
-                                    </a>
-                                </span>
-                            </div>
-
-                            <div class="widget-body">
-                                <div class="widget-main">
-                                    
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="form-field-8">类型名称</label>
+                                    <input class="form-control" id="form-field-8" placeholder="输入类型名称"/>
                                 </div>
+
+                                <label for="form-field-select-1">选择父类</label>
+                                <select class="chosen-select form-control" id="form-field-select-1">
+                                    <option value=""></option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                </select>
                             </div>
                         </div>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.span -->
+    </div>
+
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.page-content -->
@@ -568,5 +596,14 @@
         s2_obj.addClass('active');
     }
 </script>
+
+    <script src="/novel/Public/js/jquery-ui.custom.min.js"></script>
+    <script src="/novel/Public/js/chosen.jquery.min.js"></script>
+
+
+    <script>
+        $('.chosen-select').chosen({allow_single_deselect: true});
+    </script>
+
 </body>
 </html>

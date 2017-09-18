@@ -36,34 +36,34 @@
     </div><!-- /.sidebar-shortcuts -->
 
     <ul class="nav nav-list">
-        <li class="">
-            <a href="index.html">
+        <li class="" id="Index">
+            <a href="{:U('Index/index')}">
                 <i class="menu-icon fa fa-tachometer"></i>
                 <span class="menu-text"> 首页 </span>
             </a>
             <b class="arrow"></b>
         </li>
 
-        <li class="active open">
+        <li class="" id="Category">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-tag"></i>
                 <span class="menu-text"> 分类管理 </span>
-
                 <b class="arrow fa fa-angle-down"></b>
             </a>
 
             <b class="arrow"></b>
 
             <ul class="submenu">
-                <li class="active">
-                    <a href="profile.html">
+                <li id="add">
+                    <a href="{:U('Category/add')}">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        分类添加
+                        <span>分类添加</span>
                     </a>
                     <b class="arrow"></b>
                 </li>
             </ul>
         </li>
+
     </ul><!-- /.nav-list -->
 
     <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">

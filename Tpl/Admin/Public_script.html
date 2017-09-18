@@ -1,0 +1,52 @@
+<!--[if !IE]> -->
+<script src="__ROOT__/Public/js/jquery-2.1.4.min.js"></script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="__ROOT__/Public/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    if ('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+</script>
+<script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+
+<!-- page specific plugin scripts -->
+<!-- ace scripts -->
+<script src="__ROOT__/Public/js/ace-elements.min.js"></script>
+<script src="__ROOT__/Public/js/ace.min.js"></script>
+<!-- inline scripts related to this page -->
+
+<!-- active menu -->
+<script>
+    String.prototype.trim = function (char, type) {
+        if (char) {
+            if (type == 'left') {
+                return this.replace(new RegExp('^\\' + char + '+', 'g'), '');
+            } else if (type == 'right') {
+                return this.replace(new RegExp('\\' + char + '+$', 'g'), '');
+            }
+            return this.replace(new RegExp('^\\' + char + '+|\\' + char + '+$', 'g'), '');
+        }
+        return this.replace(/^\s+|\s+$/g, '');
+    };
+
+    var url_array = document.location.pathname.trim('.html', 'right').split("/");
+    len = url_array.length;
+    s1 = url_array[len - 2];
+    s2 = url_array[len - 1];
+    if (s1 == '' || s1 == 'Index') {
+        $('#Index').addClass('active')
+    } else {
+        var s1_obj = $("#" + s1);
+        var s1_str = s1_obj.children("a").children("span").text();
+        $("#Index2").text(s1_str);
+        $("#Index3").text(s1_str);
+
+        var s2_obj = $("#" + s2);
+        var s2_str = s2_obj.children("a").children("span").text();
+        $("#Index4").text(s2_str);
+        s1_obj.addClass('active').addClass('open');
+        s2_obj.addClass('active');
+    }
+</script>

@@ -1,8 +1,12 @@
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
   RewriteEngine On
-
+  RewriteBase /novel/
+  #BaseDir /
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+  #RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+  #规则在apache fastcgi模式下会导致No input file specified.
+  #fastcgi模式使用下边
+  RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
 </IfModule>
