@@ -1,9 +1,0 @@
-[ 2017-09-19T22:58:30+08:00 ] ::1 /novel/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-ERR: 模板不存在:Tpl/Home/default/Index_index.html
-
