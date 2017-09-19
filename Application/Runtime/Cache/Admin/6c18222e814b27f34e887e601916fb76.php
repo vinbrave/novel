@@ -498,7 +498,7 @@
         <div class="col-xs-8 col-sm-8">
             <div class="widget-box">
                 <div class="widget-header">
-                    <h4 class="widget-title">Select Box</h4>
+                    <h4 class="widget-title" id="Index4">Select Box</h4>
                     <span class="widget-toolbar">
                         <a href="#" data-action="reload">
                             <i class="ace-icon fa fa-refresh"></i>

@@ -471,6 +471,62 @@
                 </li>
             </ul>
         </li>
+
+        <li class="" id="Chapter">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-tag"></i>
+                <span class="menu-text"> 章节管理 </span>
+                <b class="arrow fa fa-angle-left"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li id="Chapteradd">
+                    <a href="<?php echo U('Chapter/add');?>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        <span>章节添加</span>
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li id="Chapterindex">
+                    <a href="<?php echo U('Chapter/index');?>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        <span>最新章节列表</span>
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <li class="" id="Crawler">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-tag"></i>
+                <span class="menu-text"> 抓取管理 </span>
+                <b class="arrow fa fa-angle-left"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li id="Crawleradd">
+                    <a href="<?php echo U('Crawler/add');?>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        <span>源列表</span>
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li id="Crawlerindex">
+                    <a href="<?php echo U('Crawler/index');?>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        <span>状态信息</span>
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
     </ul><!-- /.nav-list -->
 
     <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -495,10 +551,10 @@
                     <div class="col-xs-12">
                         
     <div class="row">
-        <div class="col-xs-8 col-sm-8">
+        <div class="col-xs-12 col-sm-12">
             <div class="widget-box">
                 <div class="widget-header">
-                    <h4 class="widget-title">Select Box</h4>
+                    <h4 class="widget-title" id="Index4"></h4>
                     <span class="widget-toolbar">
                         <a href="#" data-action="reload">
                             <i class="ace-icon fa fa-refresh"></i>
@@ -508,38 +564,9 @@
                         </a>
                     </span>
                 </div>
-
                 <div class="widget-body">
                     <div class="widget-main">
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div>
-                                    <label for="form-field-8">类型名称</label>
-                                    <input class="form-control" id="form-field-8" placeholder="输入类型名称"/>
-                                </div>
-
-                                <label for="form-field-select-1">选择父类</label>
-                                <select class="chosen-select form-control" id="form-field-select-1">
-                                    <option value=""></option>
-                                    <option value="AL">Alabama</option>
-                                    <option value="AK">Alaska</option>
-                                    <option value="AZ">Arizona</option>
-                                    <option value="AR">Arkansas</option>
-                                    <option value="CA">California</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="CT">Connecticut</option>
-                                    <option value="DE">Delaware</option>
-                                    <option value="FL">Florida</option>
-                                    <option value="GA">Georgia</option>
-                                    <option value="HI">Hawaii</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="IL">Illinois</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <hr>
                     </div>
                 </div>
             </div>
@@ -626,8 +653,6 @@
 
     <script src="/novel/Public/js/jquery-ui.custom.min.js"></script>
     <script src="/novel/Public/js/chosen.jquery.min.js"></script>
-
-
     <script>
         $('.chosen-select').chosen({allow_single_deselect: true});
     </script>

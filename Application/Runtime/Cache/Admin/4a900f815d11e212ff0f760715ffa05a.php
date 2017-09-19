@@ -14,6 +14,7 @@
 
 <!-- page specific plugin styles -->
 
+
 <!-- text fonts -->
 <link rel="stylesheet" href="/novel/Public/css/fonts.googleapis.com.css"/>
 
@@ -23,7 +24,6 @@
 <!--[if lte IE 9]>
 <link rel="stylesheet" href="/novel/Public/css/ace-part2.min.css" class="ace-main-stylesheet"/>
 <![endif]-->
-<link rel="stylesheet" href="/novel/Public/css/ace-skins.min.css"/>
 <link rel="stylesheet" href="/novel/Public/css/ace-rtl.min.css"/>
 
 <!--[if lte IE 9]>
@@ -463,34 +463,7 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="widget-box">
-                            <div class="widget-header">
-                                <h4 class="widget-title" id="Index4"></h4>
-                                <span class="widget-toolbar">
-                                    <a href="#" data-action="settings">
-                                        <i class="ace-icon fa fa-cog"></i>
-                                    </a>
-
-                                    <a href="#" data-action="reload">
-                                        <i class="ace-icon fa fa-refresh"></i>
-                                    </a>
-
-                                    <a href="#" data-action="collapse">
-                                        <i class="ace-icon fa fa-chevron-up"></i>
-                                    </a>
-
-                                    <a href="#" data-action="close">
-                                        <i class="ace-icon fa fa-times"></i>
-                                    </a>
-                                </span>
-                            </div>
-
-                            <div class="widget-body">
-                                <div class="widget-main">
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.page-content -->
@@ -568,5 +541,6 @@
         s2_obj.addClass('active');
     }
 </script>
+
 </body>
 </html>
