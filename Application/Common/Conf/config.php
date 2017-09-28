@@ -41,7 +41,6 @@ return [
     'DEFAULT_M_LAYER'        => 'Model', // 默认的模型层名称
     'DEFAULT_C_LAYER'        => 'Controller', // 默认的控制器层名称
     'DEFAULT_V_LAYER'        => 'View', // 默认的视图层名称
-    'DEFAULT_LANG'           => 'zh-cn', // 默认语言
     'DEFAULT_MODULE'         => 'Home',  // 默认模块
     'DEFAULT_CONTROLLER'     => 'Index', // 默认控制器名称
     'DEFAULT_ACTION'         => 'index', // 默认操作名称
@@ -53,10 +52,10 @@ return [
 
     /* 数据库设置 */
     'DB_TYPE'                => 'mysql',     // 数据库类型
-    'DB_HOST'                => 'localhost', // 服务器地址
+    'DB_HOST'                => '172.16.88.89', // 服务器地址
     'DB_NAME'                => 'novel',          // 数据库名
-    'DB_USER'                => 'root',      // 用户名
-    'DB_PWD'                 => 'root',          // 密码
+    'DB_USER'                => 'yangyong',      // 用户名
+    'DB_PWD'                 => 'yangyong',          // 密码
     'DB_PORT'                => '3306',        // 端口
     'DB_PREFIX'              => 'sky_',    // 数据库表前缀
     'DB_PARAMS'              => [], // 数据库连接参数
@@ -128,7 +127,7 @@ return [
 
     /* URL设置 */
     'URL_CASE_INSENSITIVE'   => FALSE,   // 默认false 表示URL区分大小写 true则表示不区分大小写
-    'URL_MODEL'              => 2,       // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
+    'URL_MODEL'              => 0,       // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
     // 0 (普通模式); 1 (PATHINFO 模式); 2 (REWRITE  模式); 3 (兼容模式)  默认为PATHINFO 模式
     'URL_PATHINFO_DEPR'      => '/',    // PATHINFO模式下，各参数之间的分割符号
     'URL_PATHINFO_FETCH'     => 'ORIG_PATH_INFO,REDIRECT_PATH_INFO,REDIRECT_URL', // 用于兼容判断PATH_INFO 参数的SERVER替代变量列表
@@ -158,4 +157,12 @@ return [
     'CHECK_APP_DIR'      => TRUE,       // 是否检查应用目录是否创建
     'FILE_UPLOAD_TYPE'   => 'Local',    // 文件上传方式
     'DATA_CRYPT_TYPE'    => 'Think',    // 数据加密方式
+
+    'LANG_SWITCH_ON'        =>  true,   // 开启语言包功能
+    'DEFAULT_LANG'          =>  'zh-cn', // 默认语言
+    'LANG_LIST'				=>  'zh-cn,en-us,zh-tw',
+    'LANG_AUTO_DETECT'		=>  false,
+
+    //用于密码加密的密钥
+    "AUTHCODE" => 'GCFbOF3NJ6CycAmUKp',
 ];
